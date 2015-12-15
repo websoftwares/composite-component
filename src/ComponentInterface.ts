@@ -1,7 +1,7 @@
 /**
  * ComponentInterface contract for all components to implement.
  *
- * @type {}
+ * @type ComponentInterface
  */
 export interface ComponentInterface
 {

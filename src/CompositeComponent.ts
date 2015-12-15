@@ -13,7 +13,7 @@ export class CompositeComponent implements Contract.ComponentInterface {
   private components: Contract.ComponentInterface[] = []
 
   /**
-   * Renders the ui component(s)
+   * Renders component and outputs the compiled string.
    *
    * @return string
    */
@@ -42,7 +42,7 @@ export class CompositeComponent implements Contract.ComponentInterface {
     }
 
     this.components.push(component)
-    
+
     return this;
   }
 }

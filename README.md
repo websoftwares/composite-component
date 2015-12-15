@@ -8,11 +8,14 @@
 
 1) [Install node](https://nodejs.org/en/download/package-manager/)
 
-2) [Install npm](https://docs.npmjs.com/cli/install)
-
-3) [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+2) [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 ### Build the framework
 ```
 gulp
 ```
+
+After build is completed the map `build/src` and `build/test` are created.
+
+### License
+The [MIT](http://opensource.org/licenses/MIT "MIT") License (MIT).
