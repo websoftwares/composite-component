@@ -23,16 +23,36 @@ gulp.task('scripts', ['tsd'], function() {
 });
 
 var mocha = require('gulp-mocha');
+var istanbul = require('gulp-istanbul');
 
-gulp.task('mocha', ['install', 'tsd', 'scripts'] ,function() {
-    return gulp.src(['build/test/**/*.js'])
-        .pipe(mocha({
-            compilers: {
-                ts: ts
-            }
-        }));
+gulp.task('pre-test', ['install', 'tsd', 'scripts'], function () {
+  return gulp.src(['build/src/**/*.js'])
+    // Covering files
+    .pipe(istanbul())
+    // Force `require` to return covered files
+    .pipe(istanbul.hookRequire())
+    // Coverage folder
+    .pipe(gulp.dest('coverage/'));
 });
 
+gulp.task('mocha', ['pre-test','install', 'tsd', 'scripts'], function () {
+  return gulp.src(['build/test/**/*.js'])
+    .pipe(mocha({
+        compilers: {
+            ts: ts
+        }
+    }))
+    // Creating the reports after tests ran
+    .pipe(istanbul.writeReports({
+       dir: './coverage',
+       reporters: [ 'lcov', 'json', 'text', 'text-summary','clover'],
+       reportOpts: { dir: './coverage' },
+      }
+    ))
+    // Enforce a coverage of at least 90%
+    .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
+})
+
 gulp.task('default', function() {
-  gulp.start('install','tsd', 'scripts', 'mocha');
+  gulp.start('install','tsd', 'scripts', 'pre-test', 'mocha');
 });

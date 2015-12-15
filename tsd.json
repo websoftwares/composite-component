@@ -6,13 +6,13 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "mocha/mocha.d.ts": {
-      "commit": "06dac7befb906c13eab941256e247fd79dcc934d"
+      "commit": "24e12a7af994afa2226af70fbfae0adc78736a9e"
     },
     "chai/chai.d.ts": {
-      "commit": "06dac7befb906c13eab941256e247fd79dcc934d"
+      "commit": "24e12a7af994afa2226af70fbfae0adc78736a9e"
     },
     "assertion-error/assertion-error.d.ts": {
-      "commit": "06dac7befb906c13eab941256e247fd79dcc934d"
+      "commit": "24e12a7af994afa2226af70fbfae0adc78736a9e"
     }
   }
 }

@@ -3,3 +3,4 @@ build/
 src/**/*.js
 test/**/*.js
 node_modules/
+coverage/

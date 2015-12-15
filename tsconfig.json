@@ -20,8 +20,10 @@
         "!node_modules/**"
     ],
     "files": [
-        "src/testFile.ts",
-        "test/test.ts",
+        "src/ComponentInterface.ts",
+        "src/CompositeComponent.ts",
+        "test/CompositeComponentTest.ts",
+        "typings/assertion-error/assertion-error.d.ts",
         "typings/chai/chai.d.ts",
         "typings/mocha/mocha.d.ts",
         "typings/tsd.d.ts"
