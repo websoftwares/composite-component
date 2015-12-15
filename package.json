@@ -1,0 +1,21 @@
+{
+  "name": "style-guide-component-framework",
+  "version": "0.0.1",
+  "description": "Easily build user interface components for your style guides",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-install": "^0.6.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-tsd": "0.0.4",
+    "gulp-typescript": "^2.10.0",
+    "mocha": "^2.3.4",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Boris Verhaaff <boris@websoftwr.es>",
+  "license": "MIT"
+}
