@@ -1,6 +1,8 @@
 # Style guide component framework.
 [![Build Status](https://travis-ci.org/websoftwares/style-guide-component-framework.svg?branch=master)](https://travis-ci.org/websoftwares/style-guide-component-framework)
-## Build user interface components for your style guides using typescript.
+[![Coverage Status](https://coveralls.io/repos/websoftwares/style-guide-component-framework/badge.svg?branch=master&service=github)](https://coveralls.io/github/websoftwares/style-guide-component-framework?branch=master)
+
+### Build user interface components for your style guides using typescript.
 
 ### Requirements
 
