@@ -1,6 +1,6 @@
 # Style guide component framework.
-
-## Build user interface components for your style guides.
+[![Build Status](https://travis-ci.org/websoftwares/style-guide-component-framework.svg?branch=master)](https://travis-ci.org/websoftwares/style-guide-component-framework)
+## Build user interface components for your style guides using typescript.
 
 ### Requirements
 
