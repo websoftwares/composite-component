@@ -1,7 +1,11 @@
 {
   "name": "style-guide-component-framework",
   "version": "0.0.1",
-  "description": "Easily build user interface components for your style guides",
+  "description": "Build user interface components for your style guides",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/websoftwares/style-guide-component-framework.git"
+  },
   "devDependencies": {
     "chai": "^3.4.1",
     "gulp": "^3.9.0",

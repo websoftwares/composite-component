@@ -9,11 +9,8 @@ gulp.task('install', function() {
 
 var tsd = require('gulp-tsd');
 
-gulp.task('tsd', ['install'], function () {
-    tsd({
-        command: 'reinstall',
-        config: './tsd.json'
-    });
+gulp.task('tsd', function () {
+    return gulp.src('./gulp_tsd.json').pipe(tsd());
 });
 
 var ts = require('gulp-typescript');
