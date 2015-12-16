@@ -18,7 +18,11 @@ export class CompositeComponent implements Contract.ComponentInterface {
    * @return string
    */
   render():string {
-    return ''
+    var output = ''
+    this.components.forEach(function(component) {
+      output += component.render()
+    })
+    return output
   }
 
   /**

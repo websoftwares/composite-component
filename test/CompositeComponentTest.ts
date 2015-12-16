@@ -23,8 +23,9 @@ describe('CompositeComponent tests:', () => {
 
   it('Expect that the method render returns string', function() {
     var compositeComponent = new Component.CompositeComponent()
+    compositeComponent.attachComponent(mockComponent)
     var actual = compositeComponent.render()
-    var expected = ''
+    var expected = 'hello'
     assert.equal(actual, expected)
   })
 
