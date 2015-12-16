@@ -30,10 +30,7 @@ export class CompositeComponent implements Contract.ComponentInterface {
    *
    * @return CompositeComponent
    */
-  attachComponent(
-    component: Contract.ComponentInterface
-  ): CompositeComponent {
-
+  attachComponent(component: Contract.ComponentInterface): CompositeComponent {
     if (this.components.indexOf(component) > -1) {
         throw RangeError(
           'The component u are trying to add already exists: ' +
@@ -43,6 +40,21 @@ export class CompositeComponent implements Contract.ComponentInterface {
 
     this.components.push(component)
 
-    return this;
+    return this
+  }
+
+  /**
+   * Detach leaf component, this has an fluent method chaining interface.
+   *
+   * @param  Contract.ComponentInterface leaf component to detach.
+   *
+   * @return CompositeComponent
+   */
+  detachComponent(component: Contract.ComponentInterface): CompositeComponent {
+    this.components = this.components.filter(function (value) {
+        return value !== component
+    })
+
+    return this
   }
 }

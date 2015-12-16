@@ -40,7 +40,7 @@ describe('CompositeComponent tests:', () => {
     }
   )
 
-  it('Expect that an component can be succesfully can attached.', function() {
+  it('Expect that a component can succesfully be attached.', function() {
     var compositeComponent = new Component.CompositeComponent()
     var actual = compositeComponent.attachComponent(mockComponent)
     var expected = compositeComponent
@@ -48,4 +48,14 @@ describe('CompositeComponent tests:', () => {
     assert.equal(actual, expected)
   })
 
+  it('Expect that a component can succesfully be detached.', function() {
+    var compositeComponent = new Component.CompositeComponent()
+    compositeComponent.attachComponent(mockComponent)
+
+    var actual = compositeComponent.detachComponent(mockComponent)
+    var expected = compositeComponent
+
+    assert.equal(actual, expected)
+
+  })
 });
