@@ -1,10 +1,10 @@
 {
-  "name": "style-guide-component-framework",
+  "name": "composite-component",
   "version": "0.0.1",
-  "description": "Build user interface components for your style guides",
+  "description": "Composite pattern to build user interface components.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/websoftwares/style-guide-component-framework.git"
+    "url": "https://github.com/websoftwares/composite-component.git"
   },
   "devDependencies": {
     "chai": "^3.4.1",
@@ -15,6 +15,7 @@
     "gulp-mocha": "^2.2.0",
     "gulp-tsd": "0.0.4",
     "gulp-typescript": "^2.10.0",
+    "handlebars": "^4.0.5",
     "mocha": "^2.3.4",
     "tsd": "^0.6.5",
     "typescript": "^1.7.5"
@@ -23,5 +24,10 @@
     "test": "mocha"
   },
   "author": "Boris Verhaaff <boris@websoftwr.es>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "ts-loader": "^0.7.2",
+    "webpack": "^1.12.9"
+  }
 }

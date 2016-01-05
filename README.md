@@ -1,8 +1,8 @@
-# Style guide component framework.
-[![Build Status](https://travis-ci.org/websoftwares/style-guide-component-framework.svg?branch=master)](https://travis-ci.org/websoftwares/style-guide-component-framework)
-[![Coverage Status](https://coveralls.io/repos/websoftwares/style-guide-component-framework/badge.svg?branch=master&service=github)](https://coveralls.io/github/websoftwares/style-guide-component-framework?branch=master)
+# Composite Component.
+Use the composite pattern to build user interface components using typescript.
 
-### Build user interface components for your style guides using typescript.
+[![Build Status](https://travis-ci.org/websoftwares/composite-component.svg?branch=master)](https://travis-ci.org/websoftwares/composite-component)
+[![Coverage Status](https://coveralls.io/repos/websoftwares/composite-component/badge.svg?branch=master&service=github)](https://coveralls.io/github/websoftwares/composite-component?branch=master)
 
 ### Requirements
 
@@ -10,7 +10,7 @@
 
 2) [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
-### Build the framework
+### Build the composite component
 ```
 gulp
 ```

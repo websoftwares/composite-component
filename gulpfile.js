@@ -53,6 +53,33 @@ gulp.task('mocha', ['pre-test','install', 'tsd', 'scripts'], function () {
     .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
 })
 
+var gutil = require("gulp-util");
+var webpack = require("webpack");
+
+// gulp.task("webpack", ['mocha'] ,function(callback) {
+//   webpack({
+//     entry: './index.ts',
+//     output: {
+//       filename: 'build/src/bundle.js'
+//     },
+//     resolve: {
+//       extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+//     },
+//     module: {
+//       loaders: [
+//         { test: /\.ts$/, loader: 'ts-loader' }
+//       ]
+//     }
+// }, function(err, stats) {
+//         if(err) throw new gutil.PluginError("webpack", err);
+//         gutil.log("[webpack]", stats.toString({
+//             // output options
+//         }));
+//         callback();
+//     });
+// });
+
 gulp.task('default', function() {
+  //gulp.start('install','tsd', 'scripts', 'pre-test', 'mocha', 'webpack');
   gulp.start('install','tsd', 'scripts', 'pre-test', 'mocha');
 });

@@ -1,7 +1,7 @@
 import Contract = require('./ComponentInterface');
 
 /**
- * Implementing the composite pattern to recursivly render components.
+ * Implementing the composite pattern to render components.
  */
 export class CompositeComponent implements Contract.ComponentInterface {
 

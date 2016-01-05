@@ -1,6 +1,8 @@
 typings/
 build/
 src/**/*.js
+src/**/*.map
 test/**/*.js
+test/**/*.map
 node_modules/
 coverage/
