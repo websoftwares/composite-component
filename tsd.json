@@ -6,16 +6,16 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "mocha/mocha.d.ts": {
-      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+      "commit": "7ce80dafc0df189d61950e80e04548d8304d1538"
     },
     "chai/chai.d.ts": {
-      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+      "commit": "7ce80dafc0df189d61950e80e04548d8304d1538"
     },
     "assertion-error/assertion-error.d.ts": {
-      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+      "commit": "7ce80dafc0df189d61950e80e04548d8304d1538"
     },
     "handlebars/handlebars.d.ts": {
-      "commit": "419793fb796b0e5c1ed11e018ad28475de0c3735"
+      "commit": "7ce80dafc0df189d61950e80e04548d8304d1538"
     }
   }
 }

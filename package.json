@@ -1,6 +1,6 @@
 {
   "name": "composite-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Composite pattern to build user interface components.",
   "repository": {
     "type": "git",
@@ -21,13 +21,13 @@
     "typescript": "^1.7.5"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "gulp tsd scripts"
   },
   "author": "Boris Verhaaff <boris@websoftwr.es>",
   "license": "MIT",
   "dependencies": {
     "gulp-util": "^3.0.7",
-    "ts-loader": "^0.7.2",
-    "webpack": "^1.12.9"
+    "ts-loader": "^0.7.2"
   }
 }
