@@ -1,6 +1,6 @@
 {
   "name": "composite-component",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Composite pattern to build user interface components.",
   "repository": {
     "type": "git",
