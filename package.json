@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/websoftwares/composite-component.git"
   },
+  "typings": "build/src/CompositeComponent",
   "devDependencies": {
     "chai": "^3.4.1",
     "coveralls": "^2.11.6",
